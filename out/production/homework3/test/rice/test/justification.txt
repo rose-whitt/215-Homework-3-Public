@@ -1,0 +1,83 @@
+Welcome, person.
+This is the justification file for my homework.
+
+A good test suite covers:
+    1) Typical Cases
+    2) Edge Cases/Boundary Cases
+    3) (Sometimes) Invalid Inputs
+        - bad file path
+    4) (Sometimes) Tests for Unexpected Side Effects
+
+This justification covers only the tests for the Tester class.
+
+1) Test that computeExpectedResults()...
+    - Returns the expected result for a Python function that takes as a parameter a single iterable APyObj
+    - Returns the expected result for a Python function that takes as a parameter a single non-iterable APyObj
+    - Returns the expected result for a Python function that takes as a parameter multiple iterable APyObjs
+    - Returns the expected result for a Python function that takes as a parameter multiple non-iterable APyObjs
+
+    - Returns the expected result for a Python function that returns a single iterable APyObj
+    - Returns the expected result for a Python function that returns a single non-iterable APyObj
+    - Returns the expected result for a Python function that returns multiple iterable APyObjs
+    - Returns the expected result for a Python function that returns multiple non-iterable APyObjs
+    - Returns the expected result for a Python function that returns an empty String
+    - Returns the expected result for a Python function that returns None
+
+    - Returns the expected result for a solution file with a footer
+    - Returns the expected result for a solution file with no footer
+
+    - Returns the expected result for a solution file with only one function
+    - Returns the expected result for a solution file with multiple functions
+
+    - Returns the expected result for when tests contains no test cases
+    - Returns the expected result for when tests contains only one test case
+    - Returns the expected result for when tests contains more than one test case
+
+    - Returns the expected result when Tester is constructed with an invalid function name
+    - Throws an IOException when a Tester is constructed with an invalid solution path
+    - Throws an IOException when a Tester is constructed with an invalid student implementation (implDirPath)
+
+
+2) runTests()
+    - Returns the expected result (wrongSet and caseToFiles) when there is an old version of a PyCache file that has not been deleted
+
+    - Returns the expected result (wrongSet, caseToFiles, and the correct wrapper.py file) when there is already a wrapper.py file in the student implementation (implDirPath)
+    - Returns the expected result (wrongSet, caseToFiles, and the correct wrapper.py file) when there is not a wrapper.py file in the student implementation (implDirPath)
+
+    - Returns the expected result (wrongSet and caseToFiles) when there is only one buggy implementation in the student implementation (implDirPath)
+    - Returns the expected result (wrongSet and caseToFiles) when there are more than one buggy implementations in the student implementation (implDirPath)
+
+    - Returns the expected result (wrongSet and caseToFiles) when all the buggy implementations pass all tests (i.e. none are buggy)
+    - Returns the expected result (wrongSet and caseToFiles) when only one buggy implementation passes all tests
+    - Returns the expected result (wrongSet and caseToFiles) when only one buggy implementation fails at least one test
+    - Returns the expected result (wrongSet and caseToFiles) when more than on buggy implementation fails at least one test
+
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that takes as a parameter a single iterable APyObj
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that takes as a parameter a single non-iterable APyObj
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that takes as a parameter multiple iterable APyObjs
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that takes as a parameter multiple non-iterable APyObjs
+
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that returns a single iterable APyObj
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that returns a single non-iterable APyObj
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that returns multiple iterable APyObjs
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that returns multiple non-iterable APyObjs
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that returns an empty String
+    - Returns the expected result (wrongSet and caseToFiles) for a Python function that returns None
+
+    - Returns the expected result (wrongSet and caseToFiles) for when tests contains no test cases
+    - Returns the expected result (wrongSet and caseToFiles) for when tests contains only one test case
+    - Returns the expected result (wrongSet and caseToFiles) for when tests contains more than one test case
+
+    - Returns the expected result when Tester is constructed with an invalid function name
+    - Throws an IOException when a Tester is constructed with an invalid student implementation (implDirPath)
+
+    - Returns the expected result (wrongSet and caseToFiles) when one or more buggy implementations contains no functions
+    - Returns the expected result (wrongSet and caseToFiles) when one or more buggy implementations contains only one function
+    - Returns the expected result (wrongSet and caseToFiles) when one or more buggy implementations contains more than one function
+    - Returns the expected result (wrongSet and caseToFiles) when one or more buggy implementations is syntactically incorrect
+    - Returns the expected result (wrongSet and caseToFiles) when one or more buggy implementations throws a runtime error
+
+
+
+
+
